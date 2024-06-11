@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.ads.mediationtestsuite.activities.HomeActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,8 +25,14 @@ class MainActivity : AppCompatActivity() {
 
     fun clickHandler(view: View) {
         Log.i("MainActivity-clickHandler","Button Clicked")
-        var dialIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:9782915123"))
-        var webIntent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"))
-        startActivity(webIntent)
+//        var dialIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:9782915123"))
+//        var webIntent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"))
+//        startActivity(webIntent)
+
+       /* var hintent = Intent(this.HomeActivity::class.java)
+        hintent.putExtra(name:"nkey", value:"abdul-android")
+        startActivity(hintent)*/
     }
+
+
 }
