@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
     fun clickHandler(view: View) {
         Log.i("MainActivity-clickHandler","Button Clicked")
 //        var dialIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:9782915123"))
-//        var webIntent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"))
-//        startActivity(webIntent)
+        var webIntent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"))
+        startActivity(webIntent)
 
         /*var hintent = Intent(this,HomeActivity::class.java)
         hintent.putExtra(name:"nykey", value:"abdul-android")
